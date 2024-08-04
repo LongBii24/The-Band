@@ -1,0 +1,106 @@
+/* mobile */
+@media (max-width: 740px){
+
+    .s-full-width,
+    .s-col-full{
+        width: 100% !important;
+    }
+
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+
+    /*cho nav kế thừa chiều ngang*/
+    #nav{
+        display: block;
+    }
+
+    #nav .subnav{
+        /*do trên pc có position; absolute nên nó bị nổi lên
+        sửa lại thành giá trị mặc định bỏ đi absolute*/
+        position: initial;
+        background-color: #333;
+
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 8px 41px;
+    }
+
+    #nav > li{
+        display: block;
+    }
+    /*cho phần home không được kế thừa chiều ngang*/
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #header .menu-mobile-btn{
+        display: block;
+    }
+
+    /*ẩn nút tìm kiếm*/
+    #header .search-btn{
+        display: none;
+    }
+
+    #content .member-mobile{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #content .member-img{
+        width: 60%;
+    }
+
+    #tour .places-mobile{
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .contact-form{
+        margin-top: 32px;
+    }
+
+    .contact-info{
+        line-height: 1.8;
+    }
+
+}
+/*tablet*/
+@media (min-width: 740px) and (max-width: 1023px){
+    .contact-info{
+        line-height: 2;
+    }
+}
+
+/*mobile & tablet*/
+@media (max-width: 1023px){
+    .btn{
+        padding: 15px 16px !important;
+    }
+
+    .contact-form .form-control{
+        padding: 15px;
+    }
+
+    .socials-list{
+        font-size: 48px;
+    }
+
+    .socials-list a{
+        margin: 0 8px;
+    }
+
+    .copyright a{
+        padding: 12px 0;
+        /*tính chất thẻ inlinebl padd đẩy thẻ trên và làm toàn bộ thẻ này tụt xuống*/
+        display: inline-block;
+    }
+
+}

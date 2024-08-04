@@ -237,6 +237,8 @@ do ở cha đã có position : fixed rồi nên đơn giản hơn
 #slider .text-description{
     /*giãn cách chữ*/
     margin-top: 25px;
+    /*bóng đệm đen làm nổi chữ*/
+    text-shadow: 0 0 3px #000;
 }
 
 #content {
